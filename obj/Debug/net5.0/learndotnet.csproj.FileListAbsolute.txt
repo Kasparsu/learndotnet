@@ -1,0 +1,16 @@
+C:\Users\SmartCod\Documents\GitHub\learndotnet\bin\Debug\net5.0\learndotnet.exe
+C:\Users\SmartCod\Documents\GitHub\learndotnet\bin\Debug\net5.0\learndotnet.deps.json
+C:\Users\SmartCod\Documents\GitHub\learndotnet\bin\Debug\net5.0\learndotnet.runtimeconfig.json
+C:\Users\SmartCod\Documents\GitHub\learndotnet\bin\Debug\net5.0\learndotnet.runtimeconfig.dev.json
+C:\Users\SmartCod\Documents\GitHub\learndotnet\bin\Debug\net5.0\learndotnet.dll
+C:\Users\SmartCod\Documents\GitHub\learndotnet\bin\Debug\net5.0\ref\learndotnet.dll
+C:\Users\SmartCod\Documents\GitHub\learndotnet\bin\Debug\net5.0\learndotnet.pdb
+C:\Users\SmartCod\Documents\GitHub\learndotnet\obj\Debug\net5.0\learndotnet.csproj.AssemblyReference.cache
+C:\Users\SmartCod\Documents\GitHub\learndotnet\obj\Debug\net5.0\learndotnet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SmartCod\Documents\GitHub\learndotnet\obj\Debug\net5.0\learndotnet.AssemblyInfoInputs.cache
+C:\Users\SmartCod\Documents\GitHub\learndotnet\obj\Debug\net5.0\learndotnet.AssemblyInfo.cs
+C:\Users\SmartCod\Documents\GitHub\learndotnet\obj\Debug\net5.0\learndotnet.csproj.CoreCompileInputs.cache
+C:\Users\SmartCod\Documents\GitHub\learndotnet\obj\Debug\net5.0\learndotnet.dll
+C:\Users\SmartCod\Documents\GitHub\learndotnet\obj\Debug\net5.0\ref\learndotnet.dll
+C:\Users\SmartCod\Documents\GitHub\learndotnet\obj\Debug\net5.0\learndotnet.pdb
+C:\Users\SmartCod\Documents\GitHub\learndotnet\obj\Debug\net5.0\learndotnet.genruntimeconfig.cache

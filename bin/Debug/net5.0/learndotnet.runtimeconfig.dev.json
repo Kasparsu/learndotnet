@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\SmartCod\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\SmartCod\\.nuget\\packages"
+    ]
+  }
+}
