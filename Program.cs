@@ -6,32 +6,66 @@ namespace learndotnet
     {
         static void Main(string[] args)
         {
-            // this is a comment
-            // int num1 = 4, // can assign multiple variables while initializing
-            //     num2 = 2,
-            //     num3 = 1;
-            double number = 1;
-            number = number + 1;
-            number += 3;
-            number -= 2;
-            number++;
-            number--;
-            number = 17;
-            number = number % 2; //modulo
-            number = 1.2;
-            int num1 = (int) number;
-            number = 0.2 + 0.2;
-            //char letter = 'a';
-            string word = "hello\n\n\n\t    \\ \aworld!";
-            word = @"hello\n\n\n\t    \\ \aworld!";
-            word = "hello" + " world!";
-            word += "!!!!!!!!!!";
-            bool foo = true; // foo, bar, baz
-            foo = false;
-            const double PI = 3.1415;
-            //int camelCase, StudlyCaps, snake_case; //different naming schemes
-            word = word.ToUpper();
-            Console.WriteLine(word);
+            //              false || true && false
+            // bool answer = 10 < 1 || 2 > 1 &&  3 == 1;
+            int num = 10;
+            if(num != 10){  // != mitte võrdne == võrdne < väiksem > suurem <= väiksem võrdne >= suurem võrdne
+                Console.WriteLine("väiksem");
+            } else if(num == 10) {
+                 Console.WriteLine("võrdne");
+            } else {
+                Console.WriteLine("suurem");
+            }
+            
+            bool test = true;
+            Console.WriteLine(!test);
+            Console.WriteLine(num);
+            
+            num = 2;
+
+            if(num == 1){
+                Console.WriteLine("üks");
+            } else if (num == 2 || num == 4) {
+                Console.WriteLine("kaks v neli");
+            } else if(num == 3) {
+                Console.WriteLine("kolm");
+            } else {
+                Console.WriteLine("tundmatu");
+            }
+
+            switch(num) {
+                case 1:
+                    Console.WriteLine("üks");
+                    break;
+                case 4:
+                case 2:
+                    Console.WriteLine("kaks v neli");
+                    break;
+                case 3: 
+                    Console.WriteLine("kolm");
+                    break;
+                default:
+                    Console.WriteLine("tundmatu");
+                    break;
+            }
+            
+            // for(int i=0;i<100;i++) {
+            //     if(i % 3 == 0) {
+            //         Console.WriteLine(i);
+            //     }
+            // }
+            // for(int i=0;i<100;i+=3) {
+            //     Console.WriteLine(i);
+            // }
+            num = 1;
+            for(int i=0;i<20;i++) {
+                num*=2;
+            }
+            Console.WriteLine(num);
+
+            for(int i=9;i>=0;i++) {
+                Console.WriteLine(i);
+            }
         }
     }
 }
