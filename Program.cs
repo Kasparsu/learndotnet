@@ -6,35 +6,19 @@ namespace learndotnet
     {
         static void Main(string[] args)
         {
-            try {
-                Console.WriteLine("Sisesta esimene number:");
-                int num1 = int.Parse(Console.ReadLine());
-                Console.WriteLine("Sisesta teine number:");
-                int num2 = int.Parse(Console.ReadLine());
-                Console.WriteLine("Sisesta operatsioon (liida, lahuta, korruta, jaga):");
-                string operation = Console.ReadLine();
-                int answer;
-                switch(operation) {
-                    case "liida": 
-                        answer = num1+num2;
-                        break;
-                    case "lahuta": 
-                        answer = num1-num2;
-                        break;
-                    case "korruta": 
-                        answer = num1*num2;
-                        break;
-                    case "jaga": 
-                        answer = num1/num2;
-                        break;
-                    default:
-                        throw(new Exception());
-                }
-                Console.WriteLine("Vastus on:" + answer);
-            } catch {
-                Console.WriteLine("Vale sisend!");
+            Random random = new Random();              
+            double num;
+            int num2;
+            for(int i = 0; i<10; i++){
+                num = random.NextDouble()*10 + (20-10);
+                Console.WriteLine(num);
+                num2 = random.Next(10, 20); // 10 to 20
+                Console.WriteLine(num2);
+                num2 = random.Next(10); // 0 to 10
+                Console.WriteLine(num2);
+                num2 = random.Next(); // 0 to max int
+                Console.WriteLine(num2);
             }
-
         }
     }
 }
