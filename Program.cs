@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace learndotnet
 {
@@ -12,6 +13,24 @@ namespace learndotnet
             int[] result = insertSort(array);
             foreach(int num in result){
                 Console.WriteLine(num);
+            }
+            char letter = '"';
+            string words = "vvvaa";
+            //words = System.String.Empty;
+            Console.WriteLine(words.IndexOf('a'));
+            Console.WriteLine(words.Substring(2,2));
+            Console.WriteLine(words.Replace('v', 'b'));
+            Console.WriteLine(words.Contains('b'));
+            Console.WriteLine(words.Insert(2, "sss"));
+            Console.WriteLine(words.Remove(2, 2));
+            Console.WriteLine(words.Trim());
+            
+            Match value = Regex.Match(" ssss  aaaaa  ssdfafa ababa faf af ", "[ab]{5}");
+            Console.WriteLine("matched:" + value.Value);
+
+            MatchCollection values = Regex.Matches(" ssss  aaaaa ssdfafa ababa faf af ", "[ab]{5}");
+            foreach(Match val in values){
+                Console.WriteLine(val.Value);
             }
         }
 
