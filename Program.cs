@@ -9,46 +9,25 @@ namespace learndotnet
     {
         static void Main(string[] args)
         {
-            int[] array = {5,2,4,6,1,4,3};
-            int[] result = insertSort(array);
-            foreach(int num in result){
-                Console.WriteLine(num);
-            }
-            char letter = '"';
-            string words = "vvvaa";
-            //words = System.String.Empty;
-            Console.WriteLine(words.IndexOf('a'));
-            Console.WriteLine(words.Substring(2,2));
-            Console.WriteLine(words.Replace('v', 'b'));
-            Console.WriteLine(words.Contains('b'));
-            Console.WriteLine(words.Insert(2, "sss"));
-            Console.WriteLine(words.Remove(2, 2));
-            Console.WriteLine(words.Trim());
-            
-            Match value = Regex.Match(" ssss  aaaaa  ssdfafa ababa faf af ", "[ab]{5}");
-            Console.WriteLine("matched:" + value.Value);
-
-            MatchCollection values = Regex.Matches(" ssss  aaaaa ssdfafa ababa faf af ", "[ab]{5}");
-            foreach(Match val in values){
-                Console.WriteLine(val.Value);
-            }
-        }
-
-        static int[] insertSort(int[] array) {
-            for(int i = 0; i<array.Length; i++){
-                int min = array[i];
-                int minPos = i;
-                for(int j = i; j<array.Length; j++){
-                    if(array[j] < min){
-                        min = array[j];
-                        minPos = j;
-                    }
-                }
-                int temp = array[i];
-                array[i] = min;
-                array[minPos] = temp;
-            }
-            return array;
+            DateTime time = new DateTime(1993, 03, 21, 14, 58, 33, 133);
+            Console.WriteLine(time);
+            Console.WriteLine(time.Date);
+            Console.WriteLine(time.Hour);
+            Console.WriteLine(time.Minute);
+            Console.WriteLine(time.Second);
+            Console.WriteLine(time.Millisecond);
+            Console.WriteLine(time.Day);
+            Console.WriteLine(time.Year);
+            Console.WriteLine(time.Month);
+            Console.WriteLine(time.DayOfWeek);
+            Console.WriteLine(time.DayOfYear);
+            DateTime now = DateTime.Now;
+            Console.WriteLine(now);
+            time = DateTime.Parse("2021-12-31");
+            Console.WriteLine(time);
+            time = time.AddDays(3);
+            Console.WriteLine(time);
+            Console.WriteLine(time.ToString("yyyy MMMM ddd"));
         }
     }
 }
